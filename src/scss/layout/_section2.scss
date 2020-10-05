@@ -1,0 +1,125 @@
+// .colapsableForm {
+//   margin: 27px 19px 30px 20px;
+// }
+//   FORMULARIO
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.fill {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 30px 0;
+  font-size: 14px;
+  line-height: 1.43;
+  border-bottom: red solid 1px;
+  &__label {
+    margin-top: 20px;
+
+    &--img {
+      margin-top: 18px;
+    }
+  }
+  &__input {
+    border: 1px solid red;
+    margin-top: 7px;
+    height: 30px;
+
+    &--img {
+      height: 30px;
+      width: 140px;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    &--label {
+      position: absolute;
+      bottom: 0;
+      height: 30px;
+      width: 140px;
+      background-color: red;
+      color: $colorText3;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 1.43;
+    }
+    &--input {
+      position: absolute;
+      bottom: 0;
+      left: 160px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+// DISEÑA
+.allbox {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #54585a;
+  text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 22px;
+  margin-left: 51px;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #54585a;
+  text-transform: uppercase;
+  margin-left: 36px;
+}
+.colors {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.box {
+  width: 30px;
+  height: 20px;
+}
+.check {
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.blue {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.red {
+  margin-bottom: 20px;
+}
+.box1 {
+  background-color: #114e4e;
+}
+.box2 {
+  background-color: #438792;
+}
+.box3 {
+  background-color: #a2deaf;
+}
+.box4 {
+  background-color: #420101;
+}
+.box5 {
+  background-color: #bd1010;
+}
+.box6 {
+  background-color: #e95626;
+}
+.box7 {
+  background-color: #3e5b65;
+}
+.box8 {
+  background-color: #eab052;
+}
+.box9 {
+  background-color: #a0c0cf;
+}

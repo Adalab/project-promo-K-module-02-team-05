@@ -1,0 +1,77 @@
+<article>
+    <div class="info">
+      <i class="far fa-keyboard"></i>
+      <h3>Rellena</h3>
+      <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-down"></i>
+    </div>
+    <form action="" method="post" class="fill">
+      <label for="fullName" class="fill__label">Nombre completo</label>
+      <input
+        class="fill__input"
+        placeholder="Ej: Sally Jill"
+        id="fullName"
+        type="text"
+        name="fullName"
+        required
+      />
+      <label for="job" class="fill__label">Puesto</label>
+      <input
+        class="fill__input"
+        placeholder="Ej: Front-end unicorn"
+        id="job"
+        type="text"
+        name="job"
+        required
+      />
+      <label class="fill__label--img" for="avatar">Imagen de perfil</label>
+
+      <input
+        class="fill__input--img"
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept="image/png, image/jpeg"
+        ;
+      />
+      <div class="fill__wrapper">
+        <label class="fill__wrapper--label">Añadir Imagen</label>
+        <input class="fill__wrapper--input" type="text" />
+      </div>
+      <label for="mail" class="fill__label">Email</label>
+      <input
+        class="fill__input"
+        id="mail"
+        type="email"
+        name="emailaddress"
+        placeholder="Ej: Sally-hill@gmail.com"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+      <label for="telephone" class="fill__label">Teléfono</label>
+      <input
+        class="fill__input"
+        id="telephone"
+        type="tel"
+        name="telephone"
+        placeholder="Ej: 555-55-55-55"
+        pattern="[0-9]{9}"
+      />
+      <label for="Linkedin" class="fill__label">Linkedin</label>
+      <input
+        class="fill__input"
+        id="Linkedin"
+        type="text"
+        name="Linkedin"
+        placeholder="Ej: linkedin.com/in/sally.hill"
+      />
+      <label for="Github" class="fill__label">Github</label>
+      <input
+        class="fill__input"
+        id="Github"
+        type="text"
+        name="Github"
+        placeholder="Ej: @Sally-hill"
+        pattern="@[A-Za-z][0-9]{1,}"
+      />
+    
+  </article>
