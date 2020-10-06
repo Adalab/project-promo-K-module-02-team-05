@@ -1,6 +1,10 @@
-// .colapsableForm {
-//   margin: 27px 19px 30px 20px;
-// }
+.colapsableForm {
+  padding: 27px 20px 30px 20px;
+}
+.icons {
+  color: $colorBrand4;
+  font-size: 18px;
+}
 //   FORMULARIO
 .info {
   display: flex;
@@ -41,7 +45,7 @@
       height: 30px;
       width: 140px;
       background-color: red;
-      color: $colorText3;
+      color: $colorBrand3;
       border-radius: 3px;
       text-align: center;
       line-height: 1.43;
