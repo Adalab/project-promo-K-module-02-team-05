@@ -24,20 +24,17 @@
         name="job"
         required
       />
-      <label class="fill__label--img" for="avatar">Imagen de perfil</label>
-
-      <input
-        class="fill__input--img"
-        type="file"
-        id="avatar"
-        name="avatar"
-        accept="image/png, image/jpeg"
-        ;
-      />
-      <div class="fill__wrapper">
-        <label class="fill__wrapper--label">Añadir Imagen</label>
-        <input class="fill__wrapper--input" type="text" />
+      <label class="fill__label--img" for="img-selector">Imagen de perfil</label>
+    <div class="fill__wrapper">
+      <div class="action">
+        <button class="action__upload-btn js__profile-trigger" type="button">Añadir imagen</button>
+        <input type="file" name="img-selector" id="img-selector" accept="image/png, image/jpeg" class="action__hiddenField js__profile-upload-btn">
       </div>
+      <div class="profile">
+        <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+        <div class="profile__preview js__profile-preview"></div> 
+      </div>
+    </div>
       <label for="mail" class="fill__label">Email</label>
       <input
         class="fill__input"

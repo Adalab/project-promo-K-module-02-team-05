@@ -5,60 +5,7 @@
   color: $colorBrand4;
   font-size: 18px;
 }
-//   FORMULARIO
-.info {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-.fill {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 0 30px 0;
-  font-size: 14px;
-  line-height: 1.43;
-  border-bottom: red solid 1px;
-  &__label {
-    margin-top: 20px;
 
-    &--img {
-      margin-top: 18px;
-    }
-  }
-  &__input {
-    border: 1px solid red;
-    margin-top: 7px;
-    height: 30px;
-
-    &--img {
-      height: 30px;
-      width: 140px;
-      opacity: 0;
-      z-index: 1;
-    }
-  }
-  &__wrapper {
-    position: relative;
-    &--label {
-      position: absolute;
-      bottom: 0;
-      height: 30px;
-      width: 140px;
-      background-color: red;
-      color: $colorBrand3;
-      border-radius: 3px;
-      text-align: center;
-      line-height: 1.43;
-    }
-    &--input {
-      position: absolute;
-      bottom: 0;
-      left: 160px;
-      height: 30px;
-      width: 30px;
-    }
-  }
-}
 // DISEÑA
 .allbox {
   display: flex;
@@ -126,4 +73,99 @@ h3 {
 }
 .box9 {
   background-color: #a0c0cf;
+}
+//   FORMULARIO
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.fill {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 30px 0;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $colorBrand1;
+  border-bottom: $colorBrand10 solid 1px;
+  &__label {
+    margin-top: 20px;
+    &--img {
+      margin-top: 18px;
+      margin-bottom: 7px;
+    }
+  }
+  &__input {
+    border: 1px solid $colorBrand5;
+    margin-top: 7px;
+    height: 30px;
+  }
+}
+// BOTÓN IMAGEN
+.fill__wrapper {
+  display: flex;
+}
+.action {
+  text-align: center;
+}
+.action__upload-btn {
+  background: $colorBrand4;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  color: $colorBrand3;
+  font-size: 14px;
+  line-height: 1.43;
+  height: 30px;
+  width: 140px;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+// .profile__image,
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+// .profile__image {
+//   width: 300px;
+//   height: 300px;
+// }
+
+.profile__preview {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+// FIN DEL FORMULARIO
+// COMPARTE
+.share-button {
+  height: 50px;
+  width: 199px;
+  background: $colorBrand4;
+  color: $colorBrand3;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: end;
+  padding-right: 10px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  // border-bottom: $colorBrand10 solid 1px;
+}
+.share-icon {
+  font-size: 22px;
+  transform: translate(33px, 0);
+  color: $colorBrand3;
 }
