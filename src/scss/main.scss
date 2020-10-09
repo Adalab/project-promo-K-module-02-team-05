@@ -7,3 +7,13 @@
 @import "pages/index";
 @import "layout/section1";
 @import "layout/section2";
+
+@media all and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+  .colapsableForm {
+    order: -1;
+    width: 100%;
+  }
+}
