@@ -28,6 +28,7 @@
   &__rotate {
     font-size: 18px;
     color: $colorBrand2;
+    transition: all 0.4s ease;
   }
 }
 
@@ -191,4 +192,18 @@
     transform: translate(33px, 0);
     color: $colorBrand3;
   }
+}
+
+// Css javascript
+
+.js__displayNone {
+  display: none;
+}
+
+.js__show {
+  display: block;
+}
+
+.js__arrowRotate {
+  transform: rotate(180deg);
 }
