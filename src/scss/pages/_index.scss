@@ -53,4 +53,8 @@
   align-items: center;
   text-decoration: none;
   margin-bottom: 30px;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: $colorBrand1;
+  }
 }

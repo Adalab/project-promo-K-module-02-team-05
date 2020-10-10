@@ -1,5 +1,9 @@
 .colapsableForm {
   padding: 27px 20px 20px 20px;
+  @media all and (min-width: 768px) {
+    order: -1;
+    width: 100%;
+  }
 }
 .border {
   border-bottom: $colorBrand10 solid 1px;
@@ -28,6 +32,10 @@
   &__rotate {
     font-size: 18px;
     color: $colorBrand2;
+    transition-duration: 0.2s;
+    &:hover {
+      font-size: 25px;
+    }
   }
 }
 
@@ -54,7 +62,7 @@
     }
     &--box {
       width: 30px;
-      height: 20px;
+      height: 25px;
     }
   }
 }
@@ -130,12 +138,17 @@
     background: $colorBrand4;
     border-radius: 3px;
     border: 0;
+    outline: 0;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     color: $colorBrand3;
     font-size: 14px;
     line-height: 1.43;
     height: 30px;
     width: 140px;
+    transition-duration: 0.2s;
+    &:hover {
+      background-color: #cf3b09;
+    }
   }
   &__hiddenField {
     /* Ocultamos el input de tipo "file" porque no podemos 
@@ -184,7 +197,10 @@
     text-align: end;
     padding-right: 10px;
     text-transform: uppercase;
-    // border-bottom: $colorBrand10 solid 1px;
+    transition-duration: 0.2s;
+    &:hover {
+      background-color: #cf3b09;
+    }
   }
   &__icon {
     font-size: 22px;
