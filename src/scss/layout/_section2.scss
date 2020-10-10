@@ -3,6 +3,7 @@
   @media all and (min-width: 768px) {
     order: -1;
     width: 100%;
+    padding-top: 0;
   }
 }
 .border {
@@ -208,3 +209,25 @@
     color: $colorBrand3;
   }
 }
+// .shareSent {
+//   margin: 30px 0 30px 10px;
+//   &__button {
+//     height: 50px;
+//     width: 199px;
+//     background: $colorBrand12;
+//     color: $colorBrand3;
+//     border: 0;
+//     border-radius: 12px;
+//     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+//     font-size: 18px;
+//     font-weight: 600;
+//     text-align: end;
+//     padding-right: 10px;
+//     text-transform: uppercase;
+//   }
+//   &__icon {
+//     font-size: 22px;
+//     transform: translate(33px, 0);
+//     color: $colorBrand3;
+//   }
+// }
