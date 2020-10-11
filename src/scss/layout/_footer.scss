@@ -17,17 +17,21 @@
     width: 103px;
     height: 40px;
     margin-bottom: 20px;
+    transition-duration: 0.2s;
+    &:hover {
+      width: 118px;
+      height: 55px;
+    }
   }
-}
-@media all and (min-width: 768px) {
-  .footer {
+  @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-  }
-  .footer__small {
-    margin-left: 41px;
-  }
-  .footer__logo {
-    margin-right: 40px;
+    &__small {
+      margin-left: 41px;
+    }
+
+    &__logo {
+      margin-right: 40px;
+    }
   }
 }

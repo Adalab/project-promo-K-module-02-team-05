@@ -3,6 +3,13 @@
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   display: flex;
   flex-direction: column;
+  @media all and (min-width: 768px) {
+    height: auto;
+    border-radius: 6px;
+    // justify-content: center;
+    margin-left: 10px;
+    padding-top: 160px;
+  }
 }
 .sectionOneBtn {
   width: 75px;
@@ -21,15 +28,22 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: $colorBrand3;
+  }
   &__logo {
     line-height: 1.67;
+  }
+  @media all and (min-width: 768px) {
+    align-self: flex-start;
   }
 }
 .sectionOneCard {
   width: 240px;
   height: 329px;
   background-color: #ffffff;
-  margin: 20px 35px 40px 45px;
+  margin: 0 35px 40px 45px;
   &__header {
     border-left: 5px solid #438792;
     &--name {

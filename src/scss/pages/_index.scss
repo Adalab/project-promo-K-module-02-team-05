@@ -53,4 +53,41 @@
   align-items: center;
   text-decoration: none;
   margin-bottom: 30px;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: $colorBrand1;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .landing__logo {
+    width: 419px;
+  }
+  .landing__title {
+    font-size: 24px;
+    margin-top: 31px;
+  }
+  .landing__subtitle {
+    font-size: 16px;
+    margin: 0 218px 0 218px;
+  }
+  .landing__list {
+    width: 325px;
+    height: 86px;
+    margin-top: 27px;
+    border: $colorBrand4 solid 2px;
+    font-size: 28px;
+  }
+  .landing__list--title {
+    font-size: 16px;
+  }
+  .landing__button {
+    margin-top: 186px;
+    line-height: 42px;
+    margin-bottom: 59px;
+    transition-duration: 0.2s;
+    &:hover {
+      background-color: $colorBrand1;
+    }
+  }
 }
