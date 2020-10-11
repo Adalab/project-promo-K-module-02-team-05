@@ -40,21 +40,3 @@ btnShare.addEventListener('click', openShare);
 // for (let i = 0; i < btn.length; i++) {
 //   btn[i].addEventListener('click', () => openDisplay(i));
 // }
-
-// .arrow {
-//   max-width: 7%;
-//   display: flex;
-//   -webkit-transition: all 0.4s ease;
-//   -o-transition: all 0.4s ease;
-//   transition: all 0.4s ease;
-// }
-
-// .arrowRotate {
-//   -webkit-transform: rotate(-90deg);
-//   -ms-transform: rotate(-90deg);
-//   -o-transform: rotate(-90deg);
-//   transform: rotate(-90deg);
-//   -webkit-transition: all 0.4s ease;
-//   -o-transition: all 0.4s ease;
-//   transform: rotate(-90deg);
-// }
