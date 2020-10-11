@@ -33,10 +33,7 @@
   &__rotate {
     font-size: 18px;
     color: $colorBrand2;
-    transition-duration: 0.2s;
-    &:hover {
-      font-size: 25px;
-    }
+    transition: all 0.4s ease;
   }
 }
 
@@ -231,3 +228,17 @@
 //     color: $colorBrand3;
 //   }
 // }
+
+// Css javascript
+
+.js__displayNone {
+  display: none;
+}
+
+.js__show {
+  display: flex;
+}
+
+.js__arrowRotate {
+  transform: rotate(180deg);
+}
