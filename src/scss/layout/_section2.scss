@@ -43,6 +43,7 @@
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 30px;
+  transition: all 0.4s ease;
   &__title {
     font-size: 14px;
     color: $colorBrand2;
@@ -107,6 +108,7 @@
   font-size: 14px;
   line-height: 1.43;
   color: $colorBrand1;
+  transition: all 0.4s ease;
   // border-bottom: $colorBrand10 solid 1px;
   &__label {
     margin-top: 20px;
@@ -180,6 +182,7 @@
 // COMPARTE
 
 .share {
+  transition: all 0.4s ease;
   margin: 30px 0 30px 10px;
   &__button {
     height: 50px;
