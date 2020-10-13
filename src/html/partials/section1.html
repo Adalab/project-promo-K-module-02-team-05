@@ -1,35 +1,54 @@
 <section class="sectionOne">
-  <button class="sectionOneBtn">
+  <button class="sectionOneBtn js-btnReset">
     <i class="fa fa-trash-o sectionOneBtn__logo" aria-hidden="true"></i>Reset
   </button>
   <div class="sectionOneCard">
-    <header class="sectionOneCard__header">
-      <h2 class="sectionOneCard__header--name">Barry Allen - Flash</h2>
-      <h3 class="sectionOneCard__header--job">The Fastest Men Alive</h3>
+    <header class="sectionOneCard__header js-border">
+      <h2 class="sectionOneCard__header--name js__name--Card">
+        Barry Allen - Flash
+      </h2>
+      <h3 class="sectionOneCard__header--job js__fill--cardJob">
+        The Fastest Men Alive
+      </h3>
     </header>
     <img
+      class="js__profile-image"
       src="./assets/images/Flash.png"
       alt="Photo profile card"
       title="Photo profile card"
     />
     <nav>
-      <ul class="sectionOneCard__nav">
-        <li>
-          <a href="#"><i class="fa fa-mobile sectionOneCard__nav--logos" aria-hidden="true"></i></a>
-        </li>
+      <ul class="sectionOneCard__nav js-socialLogos">
         <li>
           <a href="#"
-            ><i class="fa fa-envelope-o sectionOneCard__nav--logos" aria-hidden="true"></i
+            ><i
+              class="fa fa-mobile sectionOneCard__nav--logos"
+              aria-hidden="true"
+            ></i
           ></a>
         </li>
         <li>
           <a href="#"
-            ><i class="fa fa-linkedin sectionOneCard__nav--logos" aria-hidden="true"></i
+            ><i
+              class="fa fa-envelope-o sectionOneCard__nav--logos"
+              aria-hidden="true"
+            ></i
           ></a>
         </li>
         <li>
           <a href="#"
-            ><i class="fa fa-github-alt sectionOneCard__nav--logos" aria-hidden="true"></i
+            ><i
+              class="fa fa-linkedin sectionOneCard__nav--logos"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a id="js-github-link" href="#"
+            ><i
+              class="fa fa-github-alt sectionOneCard__nav--logos"
+              aria-hidden="true"
+            ></i
           ></a>
         </li>
       </ul>
