@@ -1,7 +1,5 @@
 'user strict';
 
-// js__profile - image;
-
 //Name
 const inputName = document.querySelector('.js__fill--inputName');
 const cardName = document.querySelector('.js__name--Card');
@@ -20,6 +18,46 @@ const addJobCard = function (event) {
 };
 inputJob.addEventListener('input', addJobCard);
 
+//Complete links with inputs
+
+//movil
+const phoneLink = document.querySelector('#js-phone-link');
+const phoneInput = document.querySelector('.js-phone');
+
+const fillPhoneHref = function () {
+  phoneLink.href = phoneInput.value;
+};
+phoneInput.addEventListener('input', fillPhoneHref);
+
+//mail
+const mailLink = document.querySelector('#js-mail-link');
+const mailInput = document.querySelector('.js--mail');
+
+const fillMailHref = function () {
+  mailLink.href = mailInput.value;
+};
+mailInput.addEventListener('input', fillMailHref);
+
+//LinkedIn
+const linkedInLink = document.querySelector('#js-linkedIn-link');
+const linkedInInput = document.querySelector('.js--linkedIn');
+
+const fillLindedInHref = function () {
+  linkedInLink.href = linkedInInput.value;
+};
+linkedInInput.addEventListener('input', fillLindedInHref);
+
+//github
+const githubLink = document.querySelector('#js-github-link');
+const githubInput = document.querySelector('.js--github');
+
+const fillGithubHref = function () {
+  githubLink.href = githubInput.value;
+  console.log('DONE');
+};
+
+githubInput.addEventListener('input', fillGithubHref);
+
 //reset
 const btnReset = document.querySelector('.js-btnReset');
 
@@ -30,22 +68,13 @@ const reset = function () {
   }
   cardName.innerText = 'Barry Allen - Flash';
   cardJob.innerText = 'The Fastest Men Alive';
+  phoneLink.href = '#';
+  mailLink.href = '#';
+  linkedInLink.href = '#';
+  githubLink.href = '#';
 };
 
 btnReset.addEventListener('click', reset);
-
-//Complete links with inputs -> me falta terminar lo de los href
-
-const githubLink = document.querySelector('#js-github-link');
-const githubInput = document.querySelector('.js--github');
-
-const fillGithubHref = function () {
-  githubLink.href = githubInput.value;
-  console.log('DONE');
-  // githubValue.innerHTML = `href = ${githubValue}`;
-};
-
-githubInput.addEventListener('input', fillGithubHref);
 
 // console.log(completeHref);
 
