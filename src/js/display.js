@@ -1,4 +1,5 @@
 //Design
+"use strict";
 const btnDesign = document.querySelector('.js__designRotate');
 const displayable = document.getElementsByClassName('js__displayNone');
 
