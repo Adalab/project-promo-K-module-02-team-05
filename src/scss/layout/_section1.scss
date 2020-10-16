@@ -47,7 +47,7 @@
   &__header {
     border-left: 5px solid #438792;
     &--name {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 18px;
       font-weight: bold;
       line-height: 1.11;
@@ -57,7 +57,7 @@
       margin-left: 20px;
     }
     &--job {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       line-height: 1.25;
       font-weight: normal;
@@ -98,3 +98,7 @@
   height: 20px;
   margin-top: 2px;
 }
+
+// .checkRed:checked ~ #expand-toggle:checked ~ #expand-btn {
+//   background-color: #ccc;
+// }
