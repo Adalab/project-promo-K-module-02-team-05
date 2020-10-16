@@ -53,22 +53,4 @@ btnShare.addEventListener('click', openShare);
 // for (let i = 0; i < btn.length; i++) {
 //   btn[i].addEventListener('click', () => openDisplay(i));
 // }
-const fillInputEl = document.querySelectorAll(".js-fill__input");
-const nameEl = document.querySelector(".js-sectionOneCard__header");
-console.log(fillInputEl);
-
- const getData = function(event) {
-   const inputValue = event.currentTarget.value;
-  console.log(inputValue);
-  nameEl.innerHTML = fillInputEl.item(0);
-  console.log(fillInputEl.item(0));
-  console.log(typeof(inputValue));
-  
-}
-for (const input of fillInputEl){
-input.addEventListener("blur", getData);
-// console.log(input);
-
-}
-
 
