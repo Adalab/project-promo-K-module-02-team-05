@@ -69,5 +69,6 @@ for (const input of fillInputEl){
 input.addEventListener("blur", getData);
 // console.log(input);
 
-
 }
+
+
