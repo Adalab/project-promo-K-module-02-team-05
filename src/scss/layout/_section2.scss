@@ -110,6 +110,7 @@
   font-size: 14px;
   line-height: 1.43;
   color: $colorBrand1;
+  overflow: scroll;
   transition: all 0.4s ease;
   // border-bottom: $colorBrand10 solid 1px;
   &__label {
@@ -132,6 +133,7 @@
 // BOTÓN IMAGEN
 .fill__wrapper {
   display: flex;
+  align-items: center;
 }
 .action {
   text-align: center;
@@ -161,22 +163,26 @@
   display: flex;
   justify-content: center;
 }
-// .profile__image,
+.profile__image,
 .profile__preview {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #ccc;
 }
-// .profile__image {
-//   width: 300px;
-//   height: 300px;
-// }
+.profile__image {
+  width: 240px;
+  height: 200px;
+}
 
 .profile__preview {
   width: 30px;
   height: 30px;
   margin-left: 20px;
+}
+.eatMe {
+  width: 100px;
+  height: 100px;
 }
 
 // FIN DEL FORMULARIO
