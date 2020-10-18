@@ -35,17 +35,18 @@ let data = {
 };
 const saveField = function (event) {
   data[event.currentTarget.id] = event.currentTarget.value;
+  //console.log(data[event.currentTarget.id]);
+  //console.log(event.currentTarget.id);
   const idCards = `#js-${event.currentTarget.id}-card`;
-    document.querySelector(idCards).innerHTML = event.currentTarget.value;
-};
-const saveLink = function (event) {
-  info[event.currentTarget.id] = event.currentTarget.value;
-  const idLinks = `#js-${event.currentTarget.id}-link`;
-    document.querySelector(idLinks).href = event.currentTarget.value;
-};
-for (const eachElement of inputTitle) {
-  eachElement.addEventListener('keyup', saveField);
+  // document.querySelector(idCards).innerHTML = event.currentTarget.value;
+  const el = document.querySelector(idCards);
+  if (el.nodeName !== 'A') {
+   el.innerHTML = event.currentTarget.value;
+  } else {
+   el.href = event.currentTarget.value;
+  }
 }
-for (const eachElement of inputLink) {
-  eachElement.addEventListener('keyup', saveLink);
+//
+for (const eachElement of inputList) {
+  eachElement.addEventListener('input', saveField);
 }
