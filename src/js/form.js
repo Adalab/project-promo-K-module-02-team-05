@@ -11,8 +11,6 @@ let data = {
 };
 const saveField = function (event) {
   data[event.currentTarget.id] = event.currentTarget.value;
-  //console.log(data[event.currentTarget.id]);
-  //console.log(event.currentTarget.id);
   const idCards = `#js-${event.currentTarget.id}-card`;
   // document.querySelector(idCards).innerHTML = event.currentTarget.value;
   const el = document.querySelector(idCards);
@@ -21,7 +19,19 @@ const saveField = function (event) {
   } else {
     el.href = event.currentTarget.value;
   }
+  // render();
 }
+
+// function render(event){
+//   const idCards = `#js-${event.currentTarget.id}-card`;
+//   // document.querySelector(idCards).innerHTML = event.currentTarget.value;
+//   const el = document.querySelector(idCards);
+//   if (el.nodeName !== 'A') {
+//     el.innerHTML = event.currentTarget.value;
+//   } else {
+//     el.href = event.currentTarget.value;
+//   }
+// }
 //
 for (const eachElement of inputList) {
   eachElement.addEventListener('input', saveField);
