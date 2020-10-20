@@ -21,13 +21,11 @@
 // for (const eachElement of inputList) {
 //   eachElement.addEventListener('blur', saveField);
 // }
-const inputTitle = document.querySelectorAll('.js-fill__inputTitle');
-const inputLink = document.querySelectorAll('.js-fill__inputLink');
+const inputList = document.querySelectorAll('.js-fill__inputlist');
+
 let data = {
   fullName: '',
   job: '',
-};
-  let info = {
   mail: '',
   telephone: '',
   linkedin: '',
