@@ -206,10 +206,11 @@
     padding-right: 10px;
     text-transform: uppercase;
     outline: 0;
-    transition-duration: 0.2s;
-    &:hover {
-      background-color: #cf3b09;
-    }
+    //transition-duration: 0.2s;
+    cursor: pointer;
+    //&:hover {
+    //  background-color: #cf3b09;
+    //}
   }
   &__icon {
     font-size: 22px;
