@@ -12,15 +12,15 @@ let data = {
 const saveField = function (event) {
   data[event.currentTarget.id] = event.currentTarget.value;
   const idCards = `#js-${event.currentTarget.id}-card`;
-  // document.querySelector(idCards).innerHTML = event.currentTarget.value;
   const el = document.querySelector(idCards);
   if (el.nodeName !== 'A') {
     el.innerHTML = event.currentTarget.value;
   } else {
     el.href = event.currentTarget.value;
   }
-  // render();
+  
 }
+
 
 // function render(event){
 //   const idCards = `#js-${event.currentTarget.id}-card`;
@@ -31,6 +31,7 @@ const saveField = function (event) {
 //   } else {
 //     el.href = event.currentTarget.value;
 //   }
+  
 // }
 //
 for (const eachElement of inputList) {
@@ -46,3 +47,12 @@ const openTwitter = function (event) {
   clickShare.classList.add("shareSent");
 };
 btnTwitter.addEventListener('click', openTwitter);
+
+// RESET
+const resetBtn = document.querySelector(".js-sectionOneBtn");
+ const cleanCard = function (){
+   for (const input of inputList){
+    input.innerHTML = "Hola";
+   }
+  }
+resetBtn.addEventListener("click", cleanCard);
