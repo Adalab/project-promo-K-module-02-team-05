@@ -1,58 +1,64 @@
-'use strict';
-const inputList = document.querySelectorAll('.js-fill__input');
+"use strict";
+const profilePreview = document.querySelector(".js__profile-preview");
+const inputList = document.querySelectorAll(".js-fill__input");
 let data = {
-  fullName: '',
-  job: '',
-  mail: '',
-  telephone: '',
-  linkedin: '',
-  github: '',
+  fullName: "",
+  job: "",
+  previewImg: "",
+  profileImg: "",
+  mail: "",
+  telephone: "",
+  linkedin: "",
+  github: "",
 };
 const saveField = function (event) {
   data[event.currentTarget.id] = event.currentTarget.value;
   render();
-}
+};
 
-function render(event){
-  document.querySelector("#js-fullName-card").innerHTML = data.fullName
-  || "Barry Allen - Flash" ;
-  document.querySelector("#js-job-card").innerHTML = data.job
-  || "The Fastest Men Alive" ;
-  document.querySelector("#js-telephone-card").href = data.telephone || "#"
-  document.querySelector("#js-mail-card").href = data.mail
-  || "#" ;
-  document.querySelector("#js-linkedin-card").href = data.linkedin
-  || "#" ;
-  document.querySelector("#js-github-card").href = data.github
-  || "#" ;
+function render(event) {
+  document.querySelector("#js-fullName-card").innerHTML =
+    data.fullName || "Barry Allen - Flash";
+  document.querySelector("#js-job-card").innerHTML =
+    data.job || "The Fastest Men Alive";
+  document.querySelector("#profileImg").style =
+    data.profileImg || "background-image:url(./assets/images/Flash.png)";
+  const preview = document.querySelector("#previewImg");
 
+  if (preview !== data.previewImg) {
+    profilePreview.classList.remove("eatMe");
+    preview.style = "";
+  }
+  document.querySelector("#js-telephone-card").href = data.telephone || "#";
+  document.querySelector("#js-mail-card").href = data.mail || "#";
+  document.querySelector("#js-linkedin-card").href = data.linkedin || "#";
+  document.querySelector("#js-github-card").href = data.github || "#";
 }
 
 for (const eachElement of inputList) {
-  eachElement.addEventListener('input', saveField);
+  eachElement.addEventListener("input", saveField);
 }
 
-
-
-const shareLink = document.querySelector('.js-link');
-const btnTwitter = document.querySelector('.js-share');
+const shareLink = document.querySelector(".js-link");
+const btnTwitter = document.querySelector(".js-share");
 const clickShare = document.querySelector(".js-share__button");
 const openTwitter = function (event) {
   event.preventDefault();
   shareLink.classList.add("js__show");
   clickShare.classList.add("shareSent");
 };
-btnTwitter.addEventListener('click', openTwitter);
-
+btnTwitter.addEventListener("click", openTwitter);
 
 const btnReset = document.querySelector(".js-sectionOneBtn");
 
-function resetForm(){
-  for(const input of inputList){
+function resetForm() {
+  for (const input of inputList) {
     input.value = "";
   }
   data.fullName = "";
   data.job = "";
+  data.previewImg = "";
+  data.profileImg = "";
   data.telephone = "";
   data.mail = "";
   data.linkedin = "";
