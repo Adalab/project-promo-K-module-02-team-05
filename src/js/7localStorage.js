@@ -1,30 +1,28 @@
 function setLocalStorage() {
-  console.log('set local storage');
-  localStorage.setItem('data', JSON.stringify(data));
+  console.log("set local storage");
+  localStorage.setItem("data", JSON.stringify(data));
 }
 
 function getFromLocalStorage() {
-  const savedData = JSON.parse(localStorage.getItem('data')) || data;
+  const savedData = JSON.parse(localStorage.getItem("data")) || data;
   data = savedData;
   rePaintInput();
   render();
 }
 
 function rePaintInput() {
-  // for (const item of data) {
-  document.querySelector('#fullName').value = data.fullName;
-  document.querySelector('#job').value = data.job;
-  document.querySelector('#mail').value = data.mail;
-  document.querySelector('#telephone').value = data.telephone;
-  document.querySelector('#linkedin').value = data.linkedin;
-  document.querySelector('#github').value = data.github;
-  // }
+  document.querySelector("#fullName").value = data.fullName;
+  document.querySelector("#job").value = data.job;
+  document.querySelector("#mail").value = data.mail;
+  document.querySelector("#telephone").value = data.telephone;
+  document.querySelector("#linkedin").value = data.linkedin;
+  document.querySelector("#github").value = data.github;
   if (data.profileImg) {
     document.querySelector(
-      '#profileImg'
+      "#profileImg"
     ).style.backgroundImage = `url(${data.profileImg})`;
     document.querySelector(
-      '#previewImg'
+      "#previewImg"
     ).style.backgroundImage = `url(${data.profileImg})`;
   }
 }

@@ -16,9 +16,6 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 7px;
-  // .info:first-child {
-  //   margin-top: 0;
-  // }
   &__icons {
     color: $colorBrand4;
     font-size: 18px;
@@ -110,9 +107,7 @@
   font-size: 14px;
   line-height: 1.43;
   color: $colorBrand1;
-  // overflow: scroll;
   transition: all 0.4s ease;
-  // border-bottom: $colorBrand10 solid 1px;
   &__label {
     margin-top: 20px;
     &--img {
@@ -154,8 +149,6 @@
     }
   }
   &__hiddenField {
-    /* Ocultamos el input de tipo "file" porque no podemos 
-  darle los estilos que queremos */
     display: none;
   }
 }
