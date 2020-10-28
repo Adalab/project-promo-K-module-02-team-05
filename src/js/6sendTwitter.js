@@ -5,9 +5,20 @@ const linkShare = document.querySelector('.link--share');
 const buttonTwitter = document.querySelector('.button--share');
 
 function sendRequest() {
+  const dataForTwitter = {
+    photo: data.profileImg,
+    name: data.fullName,
+    email: data.mail,
+    github: data.github,
+    job: data.job,
+    // previewImg: '',
+    //   telephone: '',
+    linkedin: data.linkedin,
+    //   github: '',
+  };
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
-    body: JSON.stringify(data),
+    body: JSON.stringify(dataForTwitter),
     headers: {
       'content-type': 'application/json',
     },
@@ -45,3 +56,13 @@ function createTwitterLink(result) {
   const twitterURL = document.querySelector('.link--share').href;
   buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
 }
+
+function showLinkSection() {
+  twitterContainer.classList.remove('hidden');
+  shareTwitter.classList.remove('hidden--border');
+  buttonShare.classList.add('change-button');
+}
+
+buttonShare.addEventListener('click', showLinkSection);
+buttonShare.addEventListener('click', sendRequest);
+buttonTwitter.addEventListener('click', createTwitterLink);
